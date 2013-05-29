@@ -87,8 +87,8 @@
                                        
                                        
                                        // this will pass along the photo objects created in this method to the "FlickrPhotoUrl" as well as set the size
-                                NSString *searchURL = [ViewController flickrPhotoURLForFlickrPhoto:photo size:@"m"];
-                                NSData *imageData = [NSData dataWithContentsOfURL:[NSURL URLWithString:searchURL]
+                                NSString *imageURL = [ViewController flickrPhotoURLForFlickrPhoto:photo size:@"m"];
+                                NSData *imageData = [NSData dataWithContentsOfURL:[NSURL URLWithString:imageURL]
                                                                                  options:0
                                                                                    error:&error];
                     UIImage *image = [UIImage imageWithData:imageData];
